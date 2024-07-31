@@ -4,12 +4,12 @@ metadata:
   name: first-pipeline5 # Executable ID  (max length 64 lowercase-hyphen-separated), please modify this to any value if you are not the only user of your SAP AI Core instance. Example: `first-pipeline-1234`
   annotations:
     scenarios.ai.sap.com/description: "Intr. to SAP AI Core"
-    scenarios.ai.sap.com/name: "Tutorial"
+    scenarios.ai.sap.com/name: "First Pipeline"
     executables.ai.sap.com/description: "Greets the user"
     executables.ai.sap.com/name: "Hello Pipeline "
   labels:
-    scenarios.ai.sap.com/id: "learning2"
-    ai.sap.com/version: "1.0"
+    scenarios.ai.sap.com/id: "learning"
+    ai.sap.com/version: "2.0"
 spec:
   entrypoint: mypipeline
   templates:
@@ -26,4 +26,4 @@ spec:
         - '-c'
       args:
        - |
-        print("Hello from SAP AI Core")
+        print("Hello , from me ")
